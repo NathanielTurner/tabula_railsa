@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+function disableOnClick(){
+  if (session[:ran] === true){
+  document.getElementById("meep").disabled = true;
+  }
+}

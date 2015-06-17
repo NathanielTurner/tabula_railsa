@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def create
     @survey = Survey.new(survey_params)
-
+    session[:ran] = true
     respond_to do |format|
       if @survey.save
         format.html { redirect_to home_path(@survey), notice: 'Survey was successfully created.' }
