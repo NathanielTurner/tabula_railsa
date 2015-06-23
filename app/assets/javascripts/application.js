@@ -15,6 +15,6 @@
 //= require turbolinks
 //= require_tree .
 function disableOnClick(){
-  ('#happy').closest('button').disabled = true;
-  }
+  var button = document.getElementById('submit');
+  button.disabled = true;
 }
