@@ -15,7 +15,6 @@
 //= require turbolinks
 //= require_tree .
 function disableOnClick(){
-  if (session[:ran] === true){
-  document.getElementById("meep").disabled = true;
+  ('#happy').closest('button').disabled = true;
   }
 }
