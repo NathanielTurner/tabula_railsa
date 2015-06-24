@@ -14,7 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-function disableOnClick(){
-  var button = document.getElementById('submit');
-  button.disabled = true;
-}
+
+
+$(function(){
+    $("#check-box").hide();
+    $("#name-input").on("click", function(){
+        $("#check-box").toggle();
+    });
+});
